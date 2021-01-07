@@ -1,0 +1,146 @@
+#headerContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #151B2B;
+    min-width: fit-content;
+    min-height: 50rem;
+    padding: 0rem 4rem 0rem 4rem;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    margin-top: 3rem;
+}
+
+.logoContainer > img {
+    height: 3rem;
+}
+
+
+.logoContainer > span {
+    color:#A8A8C1;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.leftSection{
+    width: 30rem;
+    padding-right: 4rem;
+}
+
+.leftSection div:nth-child(2) {
+    position: relative;
+    margin-top: 5rem;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+.leftSection p:nth-of-type(1) {
+    position: relative;
+    color: #fff;
+    width: 30rem;
+    text-align: justify;
+    font-size: 1.5rem;
+    transition: all 1s ease;
+}
+
+.leftSection p:nth-of-type(2) {
+    position: relative;
+    color: #8686B2;
+    width: 30rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    transition: all 1s ease;
+}
+
+#headerBtnContainer {
+    display: flex;
+}
+
+.leftSection button:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    color:#fff;
+    font-weight: 500;
+    outline: none;
+    border : none;
+    border-radius: 0.2rem;
+    padding: 0.6rem;
+    margin-right: 1.5rem;
+    background-color: #454658;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.leftSection button:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    color:#fff;
+    font-weight: 500;
+    outline: none;
+    border : none;
+    border-radius: 0.2rem;
+    padding: 0.6rem;
+    background-color: #6578C0;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.headerIcon {
+    font-size: 1.2rem;
+    margin-right: 0.2rem;
+}
+
+
+.rightSection{
+    width: 30rem;
+    padding-left: 4rem;
+}
+
+.rightSection img {
+    width:30rem;
+    position:absolute;
+    animation: slideImg 1s ease;
+}
+
+.rightSection img:nth-child(1) {
+    top: 5rem;
+    z-index: 4;
+}
+
+.rightSection img:nth-child(2) {
+    top: 15rem;
+    z-index: 3;
+}
+
+.rightSection img:nth-child(3) {
+    top: 25rem;
+    z-index: 1;
+}
+
+.rightSection img:nth-child(4) {
+    top: 5rem;
+    z-index: 2;
+    animation: slideImg 1s ease, dotsHeight 1.2s ease;
+}
+
+
+@keyframes slideImg {
+    0%{
+        top:2rem;
+    }
+}
+
+@keyframes dotsHeight {
+    0%{
+        clip-path: inset(0 0 100% 0);
+    }
+    100%{
+        clip-path: inset(0 0 0 0);
+    }
+    
+}

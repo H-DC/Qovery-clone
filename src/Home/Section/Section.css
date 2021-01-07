@@ -1,0 +1,56 @@
+#sectionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50rem;
+}
+
+#sectionContainer h3 {
+   margin: 4rem 0rem 0rem 0rem;
+   font-size: 2rem;
+   color: #454658;
+}
+
+#sectionContainer p {
+    width: 50rem;
+    text-align: center;
+    color: #454658;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.sectionImgBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionImgBox img {
+    position: absolute;
+    width: 50rem;
+}
+
+.sectionImgBox img:nth-child(2){
+    transform-origin: 11.2rem 20rem;
+}
+
+.sectionImgBox img:nth-child(3){
+    transform-origin: 22.3rem 13rem;
+}
+
+.sectionImgBox img:nth-child(4){
+    transform-origin: 32.9rem 6.75rem; 
+}
+
+.sectionImgBox img:nth-child(5){
+    transform-origin: 45.6rem 13.5rem; 
+}
+
+
+@keyframes pop {
+    100%, 0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
