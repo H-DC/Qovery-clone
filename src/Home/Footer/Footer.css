@@ -1,76 +1,77 @@
-#footerContainer{
+#footerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 #footerContainer h3 {
     margin: 3rem 0rem 0rem 0rem;
     font-size: 2rem;
     color: #454658;
- }
+}
 
- #footerBanner {
+#footerBanner {
     width: 100%;
-    background-color: #151B2B;
+    background-color: #151b2b;
     height: 10rem;
     display: grid;
     place-items: center;
- }
-
- #footerContainer p {
-     color:#fff;
-     font-weight: lighter;
- }
-
- #imageBox {
-     display: flex;
-     align-items: center;
-     overflow: hidden;
 }
 
- #imageBox img {
-     height:10rem;
-     width :15rem;
-     object-fit: contain;
-     padding: 3rem;
-     animation: sliderEnter 2s ease;
-     transform: translateX(-11.5rem);
- }
+#footerContainer p {
+    color: #fff;
+    font-weight: lighter;
+}
 
- #carousel {
-     position: relative;
-     width: 40rem;
- }
- 
- .shaders {
+#imageBox {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#imageBox img {
+    height: 10rem;
+    width: 15rem;
+    object-fit: contain;
+    padding: 3rem;
+    animation: sliderEnter 2s ease;
+    transform: translateX(-11.5rem);
+}
+
+#carousel {
+    position: relative;
+    width: 40rem;
+}
+
+.shaders {
     position: absolute;
-    top:0;
+    top: 0;
     width: 10rem;
     height: 10rem;
     background-color: red;
     height: 100%;
     z-index: 2;
- }
-
- .shaders:nth-of-type(1) {
-    left:0;
-    background: linear-gradient(90deg,#F9F9FD,transparent);
 }
 
- .shaders:nth-of-type(2) {
-     right:0;
-     background: linear-gradient(90deg,transparent,#F9F9FD);
- }
+.shaders:nth-of-type(1) {
+    left: 0;
+    background: linear-gradient(90deg, #f9f9fd, transparent);
+}
 
- 
-  @keyframes sliderEnter {
-      0%,20%{
-        width:0;
-        padding:0;
-      }
-      100%{
-        width:15rem;
-        padding:3rem;
-      }
-  }
+.shaders:nth-of-type(2) {
+    right: 0;
+    background: linear-gradient(90deg, transparent, #f9f9fd);
+}
+
+@keyframes sliderEnter {
+    0%,
+    20% {
+        width: 0;
+        padding: 0;
+    }
+    100% {
+        width: 15rem;
+        padding: 3rem;
+    }
+}

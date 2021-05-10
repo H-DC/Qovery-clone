@@ -1,8 +1,10 @@
-#headerContainer{
+#headerContainer {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    background-color: #151B2B;
-    min-width: fit-content;
+    background-color: #151b2b;
+    min-width: 76rem;
+    width: 100%;
     min-height: 50rem;
     padding: 0rem 4rem 0rem 4rem;
 }
@@ -18,15 +20,14 @@
     height: 3rem;
 }
 
-
 .logoContainer > span {
-    color:#A8A8C1;
+    color: #a8a8c1;
     font-size: 2rem;
     font-weight: 600;
     margin-left: 1rem;
 }
 
-.leftSection{
+.leftSection {
     width: 30rem;
     padding-right: 4rem;
 }
@@ -50,7 +51,7 @@
 
 .leftSection p:nth-of-type(2) {
     position: relative;
-    color: #8686B2;
+    color: #8686b2;
     width: 30rem;
     text-align: justify;
     margin-bottom: 2rem;
@@ -64,10 +65,10 @@
 .leftSection button:nth-of-type(1) {
     display: flex;
     align-items: center;
-    color:#fff;
+    color: #fff;
     font-weight: 500;
     outline: none;
-    border : none;
+    border: none;
     border-radius: 0.2rem;
     padding: 0.6rem;
     margin-right: 1.5rem;
@@ -79,13 +80,13 @@
 .leftSection button:nth-of-type(2) {
     display: flex;
     align-items: center;
-    color:#fff;
+    color: #fff;
     font-weight: 500;
     outline: none;
-    border : none;
+    border: none;
     border-radius: 0.2rem;
     padding: 0.6rem;
-    background-color: #6578C0;
+    background-color: #6578c0;
     transition: all 1s ease;
     cursor: pointer;
 }
@@ -95,15 +96,14 @@
     margin-right: 0.2rem;
 }
 
-
-.rightSection{
+.rightSection {
     width: 30rem;
     padding-left: 4rem;
 }
 
 .rightSection img {
-    width:30rem;
-    position:absolute;
+    width: 30rem;
+    position: absolute;
     animation: slideImg 1s ease;
 }
 
@@ -128,19 +128,17 @@
     animation: slideImg 1s ease, dotsHeight 1.2s ease;
 }
 
-
 @keyframes slideImg {
-    0%{
-        top:2rem;
+    0% {
+        top: 2rem;
     }
 }
 
 @keyframes dotsHeight {
-    0%{
+    0% {
         clip-path: inset(0 0 100% 0);
     }
-    100%{
+    100% {
         clip-path: inset(0 0 0 0);
     }
-    
 }
