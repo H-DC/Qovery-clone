@@ -18,7 +18,7 @@ function Footer() {
 
     return (
         <div id="footerContainer">
-                <h3>They use it</h3>
+                <h3>They use it !</h3>
                 <div id="carousel">
                         <div className='shaders'></div>
                         <div className='shaders'></div>
