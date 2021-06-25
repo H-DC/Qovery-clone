@@ -3,7 +3,6 @@ body {
 }
 
 #homeContainer {
-    min-width: 76rem;
     width: 100%;
     display: flex;
     flex-direction: column;

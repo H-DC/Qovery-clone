@@ -9,45 +9,65 @@
 
 #gridContainer > div {
     display: flex;
+    justify-content: center;
     margin-bottom: 3rem;
+    width: 100%;
 }
 
 .card {
     position: relative;
-    width:25rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    width: min(45%, 21rem);
+    padding-left: min(2rem, 2.5%);
+    padding-right: min(2rem, 2.5%);
     animation: cardfadin 1s ease;
 }
 
-.card img, .hidden img{
-    height:10rem;
+.card img,
+.hidden img {
+    height: 10rem;
 }
 
-.card h3,.card p {
+.card h3,
+.card p {
     color: #454658;
     text-align: justify;
 }
 
 .card a {
-    color:#5D64D2;
+    color: #5d64d2;
 }
 
 .hidden {
     opacity: 0;
     position: relative;
-    width:25rem;
+    width: 25rem;
     padding-left: 5rem;
     padding-right: 5rem;
 }
 
 @keyframes cardfadin {
-    0%{
+    0% {
         opacity: 0;
-        top:2rem;
+        top: 2rem;
     }
     100% {
-        opacity:1;
-        top:0rem;
+        opacity: 1;
+        top: 0rem;
+    }
+}
+
+@media all and (max-width: 900px) {
+    #gridContainer {
+        height: 124rem;
+    }
+    #gridContainer > div {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .card {
+        margin-bottom: 6rem;
+        width: 80%;
+        padding: 0;
     }
 }

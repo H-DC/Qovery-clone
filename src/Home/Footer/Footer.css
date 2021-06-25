@@ -41,7 +41,7 @@
 
 #carousel {
     position: relative;
-    width: 40rem;
+    width: min(40rem,100%);
 }
 
 .shaders {
