@@ -22,6 +22,7 @@
 #footerContainer p {
     color: #fff;
     font-weight: lighter;
+    padding: 1rem;
 }
 
 #imageBox {
@@ -41,7 +42,7 @@
 
 #carousel {
     position: relative;
-    width: min(40rem,100%);
+    width: min(40rem, 100%);
 }
 
 .shaders {

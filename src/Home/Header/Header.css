@@ -27,8 +27,8 @@
 }
 
 .leftSection {
-    width: min(30rem, 80%);
-    padding-right: 4rem;
+    width: min(30rem, 40%);
+    padding-right: 5%;
 }
 
 .leftSection div:nth-child(2) {
@@ -97,8 +97,8 @@
 
 .rightSection {
     position: relative;
-    width: min(30rem, 80%);
-    padding-left: 4rem;
+    width: min(30rem, 40%);
+    padding-left: 5%;
 }
 
 .rightSection img {

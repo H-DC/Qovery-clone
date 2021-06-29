@@ -1,8 +1,8 @@
 #sectionContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 50rem;
 }
 
 #sectionContainer h3 {
@@ -22,6 +22,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    height: min(30rem, 50vw);
+    --width-unit: calc(min(50rem, 80%) / 50);
 }
 
 .sectionImgBox img {
@@ -30,19 +32,22 @@
 }
 
 .sectionImgBox img:nth-child(2) {
-    transform-origin: 11.2rem 20rem;
+    transform-origin: calc(var(--width-unit) * 12) calc(var(--width-unit) * 40);
 }
 
 .sectionImgBox img:nth-child(3) {
-    transform-origin: 22.3rem 13rem;
+    /* transform-origin: 22.3rem 13rem; */    
+    transform-origin: calc(var(--width-unit) * 30) calc(var(--width-unit) * 25);
 }
 
 .sectionImgBox img:nth-child(4) {
-    transform-origin: 32.9rem 6.75rem;
+    /* transform-origin: 32.9rem 6.75rem; */    
+    transform-origin: calc(var(--width-unit) * 40) calc(var(--width-unit) * 20);
 }
 
 .sectionImgBox img:nth-child(5) {
-    transform-origin: 45.6rem 13.5rem;
+    /* transform-origin: 45.6rem 13.5rem; */    
+   transform-origin: calc(var(--width-unit) * 55) calc(var(--width-unit) * 30);
 }
 
 @keyframes pop {
