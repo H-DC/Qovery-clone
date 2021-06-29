@@ -65,7 +65,7 @@
         align-items: center;
         margin: 0;
     }
-    .card {
+    .card, .hidden {
         margin-bottom: 6rem;
         width: 80%;
         padding: 0;
